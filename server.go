@@ -2,11 +2,15 @@ package main
 
 import (
 	"net/http"
-	
+	"fmt"
+	"math/rand"
 	"github.com/labstack/echo/v4"
 )
 
 func main() {
+	fmt.Println("hello world", rand.Intn(10))
+
+
 	e := echo.New()
 	e.GET("/", func(c echo.Context) error {
 		return c.String(http.StatusOK, "Hello, World!")
