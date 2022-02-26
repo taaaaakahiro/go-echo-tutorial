@@ -8,11 +8,10 @@ go get github.com/labstack/echo/v4 //Echoをインストール
 
 ## command
 ```
-go run server.go
+docker-compose run --rm next npm install create-next-app
 ```
 ## url
-http://localhost:1323  
-http://localhost:1323/users/Joe  
+
 
 ## version 
 go 1.17.7 

@@ -1,7 +1,7 @@
 FROM golang:alpine3.15
 
 WORKDIR /app
-COPY ./app /app
+COPY ./api /app
 
 RUN go mod init main \
   && go mod tidy \
