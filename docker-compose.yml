@@ -8,13 +8,15 @@ services:
       - "8080:8080"
     working_dir: /app
     tty: true
+    # volumes:
+    #   - ./api:/app
 
-  next:
-    build:
-      context: .
-      dockerfile: ./docker/node/Dockerfile
-    volumes:
-      - ./:/usr/src/app 
-    command: sh -c "cd next && npm run dev"
-    ports:
-      - "3000:3000"
+  # next:
+  #   build:
+  #     context: .
+  #     dockerfile: ./docker/node/Dockerfile
+  #   volumes:
+  #     - ./:/usr/src/app 
+  #   command: sh -c "cd next && npm run dev"
+  #   ports:
+  #     - "3000:3000"
