@@ -11,6 +11,8 @@ go get github.com/labstack/echo/v4 //Echoをインストール
 docker-compose run --rm next npm install create-next-app
 ```
 ## url
+http://localhost:3000  
+http://localhost:8080  
 
 
 ## version 

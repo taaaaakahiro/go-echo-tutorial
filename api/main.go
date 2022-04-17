@@ -2,7 +2,7 @@ package main
 
 import (
 	"net/http"
-
+	"fmt"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 )
@@ -13,6 +13,8 @@ func main() {
 	e.GET("/", articleIndex)
 
 	e.Logger.Fatal(e.Start(":8080"))
+
+	fmt.Println("helllllllo")
 }
 
 func createMux() *echo.Echo {
@@ -26,7 +28,7 @@ func createMux() *echo.Echo {
 }
 
 func articleIndex(c echo.Context) error {
-	return c.String(http.StatusOK, "Hello, World!")
+	return c.String(http.StatusOK, "Hello, World!222222")
 }
 
 // package main
